@@ -2,34 +2,37 @@
 
 :root {
   color-scheme: light;
-  --brand-gold: #b89962;
-  --brand-gold-light: #d7c08c;
-  --brand-gold-dark: #80663a;
-  --brand-ink: #101010;
-  --brand-ink-soft: #676767;
-  --brand-ivory: #f6f6f4;
+  --brand-gold: #efb020;
+  --brand-gold-light: #f6d47c;
+  --brand-gold-dark: #8a6410;
+  --brand-ink: #001c3d;
+  --brand-ink-soft: #526174;
+  --brand-ivory: #faf7ef;
   --brand-paper: #ffffff;
-  --brand-night: #090909;
+  --brand-night: #00112d;
 }
 
 @theme inline {
   --font-serif: var(--font-display), "Cormorant Garamond", Georgia, serif;
-  --font-sans: var(--font-body), "Plus Jakarta Sans", system-ui, sans-serif;
-  --color-night: #090909;
-  --color-ink: #101010;
-  --color-ink-soft: #676767;
-  --color-ivory: #f6f6f4;
-  --color-brand-50: #fcfbf8;
-  --color-brand-100: #f5f0e5;
-  --color-brand-200: #e6d7b4;
-  --color-brand-300: #d7c08c;
-  --color-brand-400: #c9aa6d;
-  --color-brand-500: #b89962;
-  --color-brand-600: #9d7e49;
-  --color-brand-700: #80663a;
-  --color-brand-800: #62502f;
-  --color-brand-900: #43371f;
-  --color-brand-950: #241d11;
+  --font-sans: var(--font-body), "Manrope", system-ui, sans-serif;
+  --color-night: #00112d;
+  --color-ink: #001c3d;
+  --color-ink-soft: #526174;
+  --color-ivory: #faf7ef;
+  --color-brand-50: #fdfaf2;
+  --color-brand-100: #fbefd1;
+  --color-brand-200: #f8dfa0;
+  --color-brand-300: #f6d47c;
+  --color-brand-400: #f3c24e;
+  --color-brand-500: #efb020;
+  --color-brand-600: #a77913;
+  --color-brand-700: #8a6410;
+  --color-brand-800: #684c0e;
+  --color-brand-900: #45330c;
+  --color-brand-950: #281f0a;
+  --color-navy-500: #003060;
+  --color-navy-700: #001c3d;
+  --color-navy-950: #00112d;
   --shadow-card: 0 18px 48px rgba(0, 0, 0, 0.1);
 }
 
@@ -41,7 +44,11 @@ html {
 body {
   background: var(--brand-ivory);
   color: var(--brand-ink);
-  font-family: var(--font-body), "Plus Jakarta Sans", system-ui, sans-serif;
+  font-family: var(--font-body), "Manrope", system-ui, sans-serif;
+}
+
+.brand-logo {
+  filter: brightness(0) saturate(100%) invert(85%) sepia(28%) saturate(684%) hue-rotate(350deg) brightness(101%) contrast(93%);
 }
 
 ::selection {
@@ -145,13 +152,13 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #ececeb;
+  background: #eee9dd;
 }
 
 ::-webkit-scrollbar-thumb {
-  border: 2px solid #ececeb;
+  border: 2px solid #eee9dd;
   border-radius: 999px;
-  background: #b89962;
+  background: #efb020;
 }
 
 ::-webkit-scrollbar-thumb:hover {

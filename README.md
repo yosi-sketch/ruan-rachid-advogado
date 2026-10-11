@@ -1,18 +1,13 @@
-# Vinícius Bengtson Advocacia
+# Ruan Rachid Advogado
 
-Site institucional de Vinícius Bengtson, com atuação em Direito Penal e Processo Penal, sede em Poços de Caldas e atendimento remoto em todo o Brasil.
+Site institucional de Ruan Coelho Rachid, advogado com atuação em Direito Bancário, Previdenciário, Trabalhista e Cível, em Viçosa e região.
 
 ## Desenvolvimento
 
-Instale as dependências com npm install e inicie o ambiente local com npm run dev.
+Instale as dependências com npm install e inicie o ambiente local com npm run dev. Abra http://localhost:3000 para visualizar o site.
 
-Abra http://localhost:3000 para visualizar o site.
+## Tecnologias e identidade
 
-## Tecnologias
+Next.js 16, React 19, Tailwind CSS 4 e Framer Motion. O tema Tailwind está em app/globals.css, com azul-marinho e dourado extraídos do logotipo. Cormorant Garamond nos títulos e Manrope nos textos.
 
-- Next.js 16 com App Router
-- React 19
-- Tailwind CSS 4
-- Framer Motion
-
-Os materiais da marca ficam em `public/vinicius-bengtson`. Metadados e idioma são definidos em `app/layout.tsx`; as cores do tema Tailwind 4 estão em `app/globals.css`.
+O logo e as três artes fornecidas são utilizados diretamente da pasta public, sem cortes. Contatos, serviços e avaliações ficam em app/page.tsx; metadados em app/layout.tsx. Todos os CTAs de atendimento usam o WhatsApp (32) 98703-2621.

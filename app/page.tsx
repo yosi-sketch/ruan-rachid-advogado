@@ -12,7 +12,7 @@ import {
   ArrowRight,
   ArrowUpRight,
   Gavel,
-  Mail,
+  Camera,
   MapPin,
   Menu,
   MessageCircle,
@@ -23,16 +23,16 @@ import {
   X,
 } from "lucide-react";
 
-const whatsappNumber = "5535991912107";
+const whatsappNumber = "5532987032621";
 const whatsappMessage = encodeURIComponent(
-  "Olá, gostaria de informações sobre a atuação do escritório.",
+  "Olá, Dr. Ruan! Gostaria de orientação jurídica sobre meu caso.",
 );
 const whatsapp = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
-const email = "contato@viniciusbengtsonadvocacia.com.br";
+const instagram = "https://www.instagram.com/ruanrachid.advogado/";
 const officeAddress =
-  "Rua Prefeito Chagas, 305, sala 802A, 8º andar, Centro, Ed. Manhattan, Poços de Caldas, MG, 37701-010";
+  "Rua Benjamin Araújo, 56, sala 305, Centro, Viçosa, MG, 36570-037";
 const maps = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(officeAddress)}`;
-const googleReviews = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Vinícius Bengtson Advogado, Poços de Caldas, MG")}`;
+const googleReviews = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Ruan Rachid Advogado, Rua Benjamin Araújo, 56, Viçosa, MG")}`;
 
 const reveal: Variants = {
   hidden: { opacity: 0, y: 22 },
@@ -51,56 +51,56 @@ const stagger: Variants = {
 const practiceAreas = [
   {
     number: "01",
-    title: "Delegacia e flagrante",
+    title: "Direito Bancário",
     icon: Search,
     summary:
-      "Orientação jurídica desde os primeiros atos da investigação criminal.",
+      "Defesa do consumidor diante de descontos indevidos e abusos bancários.",
     details:
-      "A assistência na delegacia e o acompanhamento em flagrantes ajudam a compreender os atos realizados, os direitos envolvidos e os próximos passos do procedimento.",
+      "Análise individual de contratos, extratos e cobranças para orientar consumidores sobre descontos não reconhecidos e conflitos com instituições financeiras. As providências são definidas conforme os documentos e as particularidades do caso.",
     topics: [
-      "Assistência em delegacias",
-      "Acompanhamento em flagrantes",
-      "Inquérito policial",
+      "Descontos e cobranças não reconhecidos",
+      "Empréstimos e contratos bancários",
+      "Conflitos com instituições financeiras",
     ],
   },
   {
     number: "02",
-    title: "Custódia e liberdade",
+    title: "Direito Previdenciário",
     icon: Scale,
     summary:
-      "Acompanhamento em audiência de custódia e análise de medidas cabíveis.",
+      "Orientação sobre benefícios do INSS e análise de pedidos negados.",
     details:
-      "Cada situação exige leitura própria dos fatos e dos documentos disponíveis. A atuação inclui acompanhamento em audiência de custódia e análise das medidas previstas para o caso.",
+      "Acompanhamento de questões previdenciárias com análise dos documentos, do histórico de contribuições e das decisões recebidas. A orientação esclarece as etapas e as medidas que podem ser avaliadas em cada situação.",
     topics: [
-      "Audiência de custódia",
-      "Pedidos de liberdade",
-      "Habeas corpus",
-      "Prisão domiciliar",
+      "Aposentadorias e benefícios do INSS",
+      "Benefícios por incapacidade",
+      "Análise de pedidos negados",
+      "Recursos e acompanhamento de processos",
     ],
   },
   {
     number: "03",
-    title: "Processo criminal",
+    title: "Direito Trabalhista",
     icon: ShieldCheck,
     summary:
-      "Defesa técnica e acompanhamento claro das etapas processuais.",
+      "Acompanhamento de conflitos nas relações de trabalho, com atenção aos seus direitos.",
     details:
-      "Do inquérito à ação penal, o acompanhamento considera os autos, os prazos e as particularidades de cada processo, com explicação objetiva sobre o andamento e as providências possíveis.",
+      "Orientação sobre relações de trabalho a partir da análise dos fatos e dos documentos disponíveis. O acompanhamento considera as dúvidas sobre a contratação, o desligamento e as demais circunstâncias da relação profissional.",
     topics: [
-      "Inquérito policial",
-      "Resposta à acusação",
-      "Audiências e atos processuais",
+      "Rescisão e verbas trabalhistas",
+      "Demissão durante afastamento",
+      "Acompanhamento de processos trabalhistas",
     ],
   },
   {
     number: "04",
-    title: "Execução penal",
+    title: "Direito Cível",
     icon: Gavel,
     summary:
-      "Acompanhamento jurídico na fase de cumprimento da pena.",
+      "Orientação jurídica para contratos, conflitos e questões do dia a dia.",
     details:
-      "A execução penal tem regras e marcos próprios. A análise dos registros e do histórico processual orienta a avaliação de pedidos e benefícios previstos na legislação.",
-    topics: ["Remição de pena", "Saída temporária", "Acompanhamento da execução"],
+      "Atuação em questões cíveis com atenção aos documentos, aos interesses envolvidos e às alternativas de solução. Cada demanda recebe uma análise própria, com comunicação clara sobre as providências possíveis.",
+    topics: ["Análise de contratos", "Conflitos cíveis", "Orientação e acompanhamento judicial"],
   },
 ];
 
@@ -114,10 +114,10 @@ const navigation = [
 ];
 
 const reviews = [
-  "…muita seriedade, estratégia e comprometimento.",
-  "…demonstrou honestidade, competência e um profissionalismo raro nos dias de hoje.",
-  "…demonstra um domínio técnico impecável e, acima de tudo, uma transparência rara no mercado.",
-  "…seriedade, dedicação e agilidade do trabalho dele.",
+  { author: "PedroToshio", text: "Fui muito bem atendido pelo Ruan. É um profissional atencioso e competente, me ajudou demais. Explicou os passos com paciência, clareza e orientou sobre as melhores opções para o meu caso. Recomendo para todos que buscam um advogado confiável e comprometido com o cliente." },
+  { author: "Lorena Condé", text: "Super indico, advogados atenciosos, dedicados nos dão total suporte durante todo o andamento do processo!" },
+  { author: "Alan Costa", text: "O Ruan é um profissional excelente, foi atencioso, me explicou tudo perfeitamente e resolveu minha questão de maneira bem rápida, indico 100%." },
+  { author: "Joao Vitor Bortot", text: "Excelente advogado, compromisso e seriedade com a sua atuação" },
 ];
 
 function Heading({
@@ -195,17 +195,17 @@ export default function Home() {
           <div className="mx-auto flex h-[82px] max-w-7xl items-center justify-between gap-5 px-5 sm:h-[96px] sm:px-8 lg:px-12">
             <a
               href="#inicio"
-              aria-label="Vinícius Bengtson Advocacia — início"
+              aria-label="Ruan Rachid Advogado — início"
               onClick={closeMenu}
               className="shrink-0"
             >
               <Image
-                src="/vinicius-bengtson/logo.png"
-                width={2006}
-                height={784}
-                alt="Vinícius Bengtson — Advocacia Especializada"
-                className="h-auto w-[176px] sm:w-[210px]"
-                sizes="(max-width: 640px) 176px, 210px"
+                src="/Logotipo Jurídico Ruan Coelho Rachid.png"
+                width={1983}
+                height={793}
+                alt="Ruan Rachid Advogado"
+                className="brand-logo h-auto w-[180px] sm:w-[210px]"
+                sizes="(max-width: 640px) 180px, 210px"
                 loading="eager"
               />
             </a>
@@ -295,19 +295,19 @@ export default function Home() {
                 className="relative z-10 max-w-2xl lg:py-6"
               >
                 <motion.p variants={reveal} className="eyebrow-light mb-7">
-                  DIREITO PENAL · POÇOS DE CALDAS, MG
+                  ADVOCACIA · VIÇOSA E REGIÃO
                 </motion.p>
                 <motion.h1
                   variants={reveal}
                   className="max-w-[730px] font-serif text-[3.25rem] leading-[0.98] tracking-[-0.045em] text-white sm:text-6xl lg:text-[5.05rem]"
                 >
-                  Defesa criminal com <em className="font-normal text-brand-300">presença</em> em cada etapa.
+                  Seus direitos merecem <em className="font-normal text-brand-300">atenção.</em> Seu caso, clareza.
                 </motion.h1>
                 <motion.p
                   variants={reveal}
                   className="mt-7 max-w-xl text-[15px] leading-7 text-white/70 sm:text-base sm:leading-8"
                 >
-                  Atuação em Direito Penal e Processo Penal, da delegacia à execução penal. Sede em Poços de Caldas e atendimento remoto em todo o Brasil.
+                  Defesa de consumidores diante de descontos indevidos e abusos bancários. Orientação em Direito Previdenciário, Trabalhista e Cível, com atendimento em Viçosa e região.
                 </motion.p>
                 <motion.div
                   variants={reveal}
@@ -338,11 +338,11 @@ export default function Home() {
                 >
                   <span className="inline-flex items-center gap-2">
                     <MapPin size={15} className="text-brand-300" />
-                    Poços de Caldas · MG
+                    Viçosa · MG
                   </span>
                   <span className="inline-flex items-center gap-2">
                     <Scale size={15} className="text-brand-300" />
-                    OAB/MG 186.580
+                    Bancário e Previdenciário
                   </span>
                 </motion.div>
               </motion.div>
@@ -354,31 +354,16 @@ export default function Home() {
                 className="relative mx-auto w-full max-w-[490px] lg:ml-auto lg:mr-2"
               >
                 <div className="absolute -inset-3 -rotate-2 border border-brand-300/35 sm:-inset-4" />
-                <div className="relative aspect-[0.82] overflow-hidden bg-[#24221d]">
+                <div className="relative aspect-[4/5] overflow-hidden bg-ivory">
                   <Image
-                    src="/vinicius-bengtson/vinicius-bengtson-portrait.jpg"
-                    alt="Vinícius Bengtson em retrato profissional no escritório"
+                    src="/imgi_39_724446026_18103790086957091_2978066337053919699_n.webp"
+                    alt="Arte de Ruan Rachid sobre orientação para benefícios do INSS negados"
                     fill
                     sizes="(max-width: 640px) 90vw, (max-width: 1024px) 70vw, 42vw"
-                    className="object-cover object-[50%_23%]"
+                    className="object-contain"
                     loading="eager"
                     fetchPriority="high"
                   />
-                  <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-night/95 to-transparent" />
-                  <figcaption className="absolute bottom-6 left-6 right-6 flex items-end justify-between gap-3 text-white sm:bottom-8 sm:left-8 sm:right-8">
-                    <div>
-                      <p className="font-serif text-2xl">Vinícius Bengtson</p>
-                      <p className="mt-1 text-[10px] uppercase tracking-[0.17em] text-white/70">
-                        Advogado · OAB/MG 186.580
-                      </p>
-                    </div>
-                    <span className="grid size-11 shrink-0 place-items-center rounded-full border border-brand-200/70 text-brand-200">
-                      <Scale size={18} />
-                    </span>
-                  </figcaption>
-                </div>
-                <div className="absolute -left-3 top-[15%] border border-white/10 bg-night px-4 py-2.5 text-[10px] font-medium tracking-[0.1em] text-white shadow-card sm:-left-9 sm:px-5">
-                  POÇOS DE CALDAS · ATUAÇÃO NACIONAL
                 </div>
               </motion.figure>
             </div>
@@ -390,9 +375,9 @@ export default function Home() {
           >
             <div className="mx-auto grid max-w-7xl gap-6 px-5 py-7 sm:grid-cols-3 sm:gap-4 sm:px-8 lg:px-12">
               {[
-                ["Direito Penal", "atuação criminal"],
-                ["Brasil", "atendimento remoto"],
-                ["Poços de Caldas", "sede do escritório"],
+                ["Bancário", "defesa do consumidor"],
+                ["Previdenciário", "orientação sobre o INSS"],
+                ["Viçosa", "sede do escritório"],
               ].map(([value, label], index) => (
                 <div
                   key={value}
@@ -427,7 +412,7 @@ export default function Home() {
               >
                 <Heading
                   eyebrow="ÁREAS DE ATUAÇÃO"
-                  description="Informações gerais sobre as frentes de trabalho em Direito Penal. Cada situação depende de análise própria."
+                  description="Atuação em Direito Bancário, Previdenciário, Trabalhista e Cível. Orientação próxima, com análise individual de cada situação."
                 >
                   Orientação jurídica em momentos decisivos.
                 </Heading>
@@ -492,21 +477,14 @@ export default function Home() {
                 variants={reveal}
                 className="relative mx-auto w-full max-w-[550px]"
               >
-                <div className="relative aspect-[0.93] overflow-hidden bg-[#211e19]">
+                <div className="relative aspect-[4/5] overflow-hidden bg-ivory">
                   <Image
-                    src="/vinicius-bengtson/office-portrait.jpg"
-                    alt="Retrato de Vinícius Bengtson em seu escritório"
+                    src="/imgi_45_708999680_18101049862957091_6334289594634968547_n.webp"
+                    alt="Conteúdo de Ruan Rachid sobre a análise de benefícios previdenciários negados"
                     fill
                     sizes="(max-width: 1024px) 90vw, 44vw"
-                    className="object-cover object-[50%_27%]"
+                    className="object-contain"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-night/60 via-transparent to-transparent" />
-                  <figcaption className="absolute bottom-6 left-6 right-6 border-l border-brand-300 pl-4 text-white sm:bottom-8 sm:left-8">
-                    <p className="font-serif text-2xl">Vinícius Daniel de Toledo Bengtson</p>
-                    <p className="mt-1 text-[10px] uppercase tracking-[0.16em] text-white/70">
-                      OAB/MG 186.580
-                    </p>
-                  </figcaption>
                 </div>
                 <span className="absolute -left-4 -top-4 -z-10 size-24 border-l border-t border-brand-600/45 sm:-left-7 sm:-top-7 sm:size-32" />
               </motion.figure>
@@ -530,20 +508,22 @@ export default function Home() {
                   variants={reveal}
                   className="mt-6 max-w-xl text-[15px] leading-7 text-ink-soft"
                 >
-                  Vinícius Bengtson atua em Direito Penal e Processo Penal. O trabalho parte da compreensão do contexto, da leitura cuidadosa dos elementos disponíveis e da orientação sobre os caminhos jurídicos possíveis.
+                  Ruan Coelho Rachid é advogado com atuação em Viçosa e região. Seu trabalho reúne a defesa de consumidores em questões bancárias e a orientação em demandas previdenciárias, trabalhistas e cíveis.
                 </motion.p>
                 <motion.p
                   variants={reveal}
                   className="mt-4 max-w-xl text-[15px] leading-7 text-ink-soft"
                 >
-                  Com sede em Poços de Caldas, o escritório atende presencialmente e a distância, em todo o Brasil. A comunicação é direta e conduzida com clareza, respeito e discrição.
+                  No escritório, cada atendimento começa pela escuta e pela análise cuidadosa dos documentos. Você recebe explicações sobre as etapas e os caminhos possíveis, com clareza, respeito e atenção às suas dúvidas.
                 </motion.p>
                 <motion.a
                   variants={reveal}
-                  href={`mailto:${email}`}
+                  href={instagram}
+                  target="_blank"
+                  rel="noreferrer"
                   className="group mt-8 inline-flex items-center gap-2 border-b border-brand-700/40 pb-2 text-xs font-semibold uppercase tracking-[0.13em] text-brand-800 transition-colors hover:border-brand-700 hover:text-brand-700"
                 >
-                  Contato profissional
+                  Conheça o advogado no Instagram
                   <ArrowUpRight
                     size={15}
                     className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
@@ -555,7 +535,7 @@ export default function Home() {
 
           <section
             id="atendimento"
-            className="scroll-mt-24 bg-[#f3f3f1] py-20 sm:py-28"
+            className="scroll-mt-24 bg-brand-50 py-20 sm:py-28"
           >
             <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-20 lg:px-12">
               <motion.div
@@ -604,16 +584,16 @@ export default function Home() {
                 transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
                 className="relative mx-auto w-full max-w-[530px]"
               >
-                <div className="relative aspect-[0.9] overflow-hidden bg-[#c9c3b8]">
+                <div className="relative aspect-[4/5] overflow-hidden bg-ivory">
                   <Image
-                    src="/vinicius-bengtson/document-review.jpg"
-                    alt="Advogado analisando e assinando documentos jurídicos"
+                    src="/imgi_11_805405413_18118445839957091_5177170308906451658_n.webp"
+                    alt="Conteúdo de Ruan Rachid sobre demissão durante afastamento"
                     fill
                     sizes="(max-width: 1024px) 90vw, 42vw"
-                    className="object-cover object-[50%_48%]"
+                    className="object-contain"
                   />
                 </div>
-                <figcaption className="absolute -bottom-5 left-5 border-l-2 border-brand-600 bg-white px-5 py-4 shadow-card sm:-left-6 sm:px-7">
+                <figcaption className="mt-4 border-l-2 border-brand-600 bg-white px-5 py-4 sm:px-7">
                   <p className="font-serif text-xl text-ink">
                     Orientação com clareza
                   </p>
@@ -634,7 +614,7 @@ export default function Home() {
               <div className="flex flex-col gap-7 border-b border-ink/10 pb-8 sm:flex-row sm:items-end sm:justify-between">
                 <Heading
                   eyebrow="AVALIAÇÕES PÚBLICAS"
-                  description="Trechos de avaliações publicadas no Google, reproduzidos sem identificação dos autores."
+                  description="Clareza e atenção, nas palavras de quem já foi atendido. Avaliações publicadas no Google."
                 >
                   A experiência no atendimento.
                 </Heading>
@@ -661,9 +641,9 @@ export default function Home() {
               >
                 {reviews.map((review) => (
                   <motion.figure
-                    key={review}
+                    key={review.author}
                     variants={reveal}
-                    className="group flex min-h-[230px] flex-col border border-ink/10 bg-[#fafaf9] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-500/55 hover:bg-white hover:shadow-card sm:p-7"
+                    className="group flex min-h-[230px] flex-col border border-ink/10 bg-ivory p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-500/55 hover:bg-white hover:shadow-card sm:p-7"
                   >
                     <Quote
                       aria-hidden="true"
@@ -672,11 +652,11 @@ export default function Home() {
                       className="text-brand-600"
                     />
                     <blockquote className="mt-6 flex-1 font-serif text-[21px] leading-[1.45] text-ink">
-                      “{review}”
+                      “{review.text}”
                     </blockquote>
                     <figcaption className="mt-7 flex items-center gap-3 border-t border-ink/10 pt-4 text-[9px] font-semibold uppercase tracking-[0.15em] text-ink-soft">
                       <span className="h-px w-5 bg-brand-500" />
-                      Avaliação pública no Google
+                      {review.author} · Google
                     </figcaption>
                   </motion.figure>
                 ))}
@@ -693,7 +673,7 @@ export default function Home() {
                 <Heading
                   eyebrow="CONTATO E LOCALIZAÇÃO"
                   light
-                  description="Informações para contato com o escritório e localização da sede em Poços de Caldas, Minas Gerais."
+                  description="Informações para contato com o escritório e localização da sede em Viçosa, Minas Gerais."
                 >
                   Informações do escritório.
                 </Heading>
@@ -704,14 +684,16 @@ export default function Home() {
                     rel="noreferrer"
                     className="inline-flex items-center gap-3 border-b border-brand-300/45 pb-3 text-sm text-brand-100 transition-colors hover:border-brand-200 hover:text-white"
                   >
-                    <MessageCircle size={17} /> WhatsApp · (35) 99191-2107
+                    <MessageCircle size={17} /> WhatsApp · (32) 98703-2621
                     <ArrowUpRight size={14} />
                   </a>
                   <a
-                    href={`mailto:${email}`}
+                    href={instagram}
+                    target="_blank"
+                    rel="noreferrer"
                     className="inline-flex items-center gap-3 text-sm text-white/70 transition-colors hover:text-brand-200"
                   >
-                    <Mail size={17} /> {email}
+                    <Camera size={17} /> @ruanrachid.advogado
                   </a>
                 </div>
               </div>
@@ -727,19 +709,19 @@ export default function Home() {
                       Sede
                     </p>
                     <p className="mt-1 font-serif text-2xl text-white">
-                      Poços de Caldas · MG
+                      Viçosa · MG
                     </p>
                   </div>
                 </div>
                 <address className="mt-7 max-w-md not-italic text-[14px] leading-7 text-white/70">
-                  Rua Prefeito Chagas, 305, sala 802A, 8º andar<br />
-                  Centro · Ed. Manhattan<br />
-                  Poços de Caldas · MG · CEP 37701-010
+                  Rua Benjamin Araújo, 56 · Sala 305<br />
+                  Centro<br />
+                  Viçosa · MG · CEP 36570-037
                 </address>
                 <div className="my-7 h-px bg-white/15" />
                 <div className="flex flex-wrap items-center justify-between gap-4">
                   <p className="text-xs text-white/60">
-                    Atendimento presencial e remoto
+                    Atendimento em Viçosa e região
                   </p>
                   <a
                     href={maps}
@@ -755,25 +737,25 @@ export default function Home() {
           </section>
         </div>
 
-        <footer className="bg-[#090a08] px-5 py-12 text-white sm:px-8 lg:px-12">
+        <footer className="bg-night px-5 py-12 text-white sm:px-8 lg:px-12">
           <div className="mx-auto grid max-w-7xl gap-10 sm:grid-cols-2 lg:grid-cols-[1.1fr_0.9fr_1fr]">
             <div>
               <a
                 href="#inicio"
-                aria-label="Vinícius Bengtson Advocacia — voltar ao início"
+                aria-label="Ruan Rachid Advogado — voltar ao início"
                 className="inline-flex"
               >
                 <Image
-                  src="/vinicius-bengtson/logo.png"
-                  width={2006}
-                  height={784}
-                  alt="Vinícius Bengtson — Advocacia Especializada"
-                  className="h-auto w-[185px]"
-                  sizes="185px"
+                  src="/Logotipo Jurídico Ruan Coelho Rachid.png"
+                  width={1983}
+                  height={793}
+                  alt="Ruan Rachid Advogado"
+                  className="brand-logo h-auto w-[230px]"
+                  sizes="230px"
                 />
               </a>
               <p className="mt-4 max-w-xs text-xs leading-6 text-white/55">
-                Advocacia criminal com sede em Poços de Caldas e atendimento em todo o Brasil.
+                Direito Bancário, Previdenciário, Trabalhista e Cível. Atendimento em Viçosa e região.
               </p>
             </div>
             <div>
@@ -799,13 +781,15 @@ export default function Home() {
                   rel="noreferrer"
                   className="footer-link inline-flex items-center gap-2"
                 >
-                  <MessageCircle size={14} /> (35) 99191-2107
+                  <MessageCircle size={14} /> (32) 98703-2621
                 </a>
                 <a
-                  href={`mailto:${email}`}
+                  href={instagram}
+                  target="_blank"
+                  rel="noreferrer"
                   className="footer-link inline-flex items-center gap-2"
                 >
-                  <Mail size={14} /> E-mail do escritório
+                  <Camera size={14} /> Instagram do advogado
                 </a>
                 <a
                   href={maps}
@@ -813,13 +797,13 @@ export default function Home() {
                   rel="noreferrer"
                   className="footer-link inline-flex items-start gap-2"
                 >
-                  <MapPin size={14} className="mt-0.5 shrink-0" /> Poços de Caldas · MG
+                  <MapPin size={14} className="mt-0.5 shrink-0" /> Viçosa · MG
                 </a>
               </div>
             </div>
           </div>
           <div className="mx-auto mt-10 flex max-w-7xl flex-col gap-3 border-t border-white/15 pt-5 text-[10px] text-white/40 sm:flex-row sm:items-center sm:justify-between">
-            <p>© {new Date().getFullYear()} Vinícius Bengtson Advocacia · OAB/MG 186.580.</p>
+            <p>© {new Date().getFullYear()} Ruan Rachid Advogado.</p>
             <p>Conteúdo informativo. Cada situação deve ser analisada individualmente.</p>
           </div>
         </footer>
@@ -852,7 +836,7 @@ export default function Home() {
                 >
                   <X size={18} />
                 </button>
-                <p className="eyebrow">DIREITO PENAL</p>
+                <p className="eyebrow">ÁREA DE ATUAÇÃO</p>
                 <h2
                   id="area-dialog-title"
                   className="mt-4 max-w-sm pr-10 font-serif text-4xl leading-tight text-ink"

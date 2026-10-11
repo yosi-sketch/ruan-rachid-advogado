@@ -1,30 +1,27 @@
-# Vinícius Bengtson Advocacia
+# Ruan Rachid Advogado
 
-## Plataforma
-Site institucional responsivo em Next.js, com navegação por seções, detalhes de áreas de atuação em modal e acesso aos canais profissionais de contato.
+## Plataforma e objetivo
 
-## Público
-Pessoas que procuram orientação em Direito Penal e Processo Penal, com sede em Poços de Caldas e atendimento remoto em todo o Brasil.
-
-## Objetivo
-Apresentar a atuação de Vinícius Bengtson, informar as frentes de trabalho e os dados do escritório, e facilitar o acesso ao WhatsApp, e-mail e endereço.
+Site institucional responsivo para apresentar Ruan Coelho Rachid, suas áreas de atuação e os canais de atendimento em Viçosa e região. Navegação por seções e detalhes de serviços em modal.
 
 ## Identidade
-- Nome: Vinícius Bengtson Advocacia.
-- Paleta extraída da marca: dourado, preto e tons quentes de marfim.
-- Tipografia: Cormorant Garamond nos títulos e Plus Jakarta Sans nos textos.
-- Tom: sóbrio, claro e informativo.
 
-## Conteúdo e mídia
-- Logotipo e fotografias fornecidos para o novo site em `public/vinicius-bengtson`.
-- Endereço: Rua Prefeito Chagas, 305, sala 802A, 8º andar, Centro, Ed. Manhattan, Poços de Caldas - MG, 37701-010.
-- WhatsApp: (35) 99191-2107.
-- E-mail: contato@viniciusbengtsonadvocacia.com.br.
-- OAB/MG 186.580.
-- Atuação informada: assistência em delegacias e flagrantes, audiência de custódia, inquérito, pedidos de liberdade, habeas corpus e execução penal.
-- A seção de avaliações foi substituída por conteúdo informativo sobre a forma de atendimento.
+- Primária: azul-marinho #00112d e #001c3d, extraído das letras do logo.
+- Secundária: dourado #efb020 e tom claro #f6d47c, extraídos da moldura do logo.
+- Apoio: marfim #faf7ef e branco, com dourado escuro #8a6410 para texto sobre fundos claros.
+- Tipografia: Cormorant Garamond (títulos, normal e itálico) e Manrope (texto).
+- Tom: sóbrio, próximo e informativo.
 
-## Restrições técnicas
-- Next.js 16 App Router, React 19, Tailwind CSS 4 e Framer Motion.
-- Imagens locais servidas pelo otimizador do Next.js.
-- Navegação responsiva, animações com suporte à preferência por movimento reduzido e metadados de busca atualizados.
+## Dados fornecidos
+
+- Nome: Ruan Coelho Rachid; comunicação pública: Ruan Rachid Advogado.
+- WhatsApp: (32) 98703-2621; link: https://wa.me/5532987032621.
+- Endereço: Rua Benjamin Araújo, 56, sala 305, Centro, Viçosa - MG, CEP 36570-037.
+- Instagram: https://www.instagram.com/ruanrachid.advogado/.
+- Atuação: Direito Bancário, Previdenciário, Trabalhista e Cível.
+- E-mail e registro OAB não foram informados, portanto não são exibidos.
+- Avaliações: quatro depoimentos completos do material fornecido, com identificação dos autores e link de busca no Google Maps. Sem contagens ou datas inferidas.
+
+## Mídia e comportamento
+
+O logotipo PNG e as três artes WebP disponíveis em public são exibidos sem cortes. Logo com fundo transparente e apresentação monocromática dourada via CSS para garantir contraste sobre o fundo azul, sem moldura ou preenchimento adicional no cabeçalho e no rodapé. Tema em app/globals.css (Tailwind 4), ícones RR, metadados atualizados, navegação móvel e suporte a movimento reduzido.

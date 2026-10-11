@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#090909"/>
-  <path d="M32 6 52 14v16c0 13-8 22-20 28-12-6-20-15-20-28V14L32 6Z" fill="#101010" stroke="#b89962" stroke-width="2"/>
-  <path d="M32 12v11m-8-7h16m-8-4-2 4h4l-2-4" fill="none" stroke="#d7c08c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-  <text x="32" y="43" fill="#ffffff" font-family="Georgia,serif" font-size="20" font-weight="700" text-anchor="middle">VB</text>
+  <rect width="64" height="64" rx="12" fill="#00112d"/>
+  <rect x="7" y="7" width="50" height="50" rx="5" fill="none" stroke="#efb020" stroke-width="2"/>
+  <text x="32" y="43" fill="#f6d47c" font-family="Georgia,serif" font-size="30" text-anchor="middle" letter-spacing="-4">RR</text>
 </svg>
